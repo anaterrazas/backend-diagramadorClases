@@ -1,0 +1,17 @@
+# DB (Postgres)
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_NAME=mi_base
+DATABASE_USER=mi_usuario
+DATABASE_PASSWORD=mi_password
+# App
+CLIENT_ORIGIN=http://localhost:5173
+JWT_SECRET=supersecreto
+REFRESH_SECRET=supersecreto_refresh
+
+JWT_ACCESS_EXPIRES=15m
+JWT_REFRESH_EXPIRES=7d
+
+# APIs (si las usas)
+OPENAI_API_KEY=sk-...
+GEMINI_API_KEY=...
