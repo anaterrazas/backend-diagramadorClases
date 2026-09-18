@@ -1,0 +1,12 @@
+//PARA ELIMINAR MIGRACIONES 
+npx sequelize-cli db:migrate:undo:all
+//PARA REALIZAR LAS MIGRACIONES
+npx sequelize-cli db:migrate
+//PARA CREAR UNA MIGRACION
+npx sequelize-cli migration:generate --name nombre-de-la-migracion
+//PARA CREAR UN SEEDER
+npx sequelize-cli seed:generate --name nombre-del-seeder
+//PARA EJECUTAR LOS SEEDERS
+npx sequelize-cli db:seed:all
+//PARA DESHACER LOS SEEDERS 
+npx sequelize-cli db:seed:undo:all
