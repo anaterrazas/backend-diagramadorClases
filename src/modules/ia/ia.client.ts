@@ -1,10 +1,9 @@
 import fs from "fs";
+
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-console.log(process.env.GEMINI_API_KEY!);
-console.log(process.env.GEMINI_API_KEY!);
-console.log(process.env.GEMINI_API_KEY!);
+const genAI = new GoogleGenerativeAI("AIzaSyAI_rridlJHmuPxb9-L6FidH38dqVXMX_A");
+
 function fileToBase64(filePath: string): string {
   const image = fs.readFileSync(filePath);
   return image.toString("base64");

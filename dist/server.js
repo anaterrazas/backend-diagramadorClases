@@ -4,10 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
-dotenv_1.default.config();
-console.log("mi token");
-console.log(process.env.GEMINI_API_KEY);
-console.log("mi token");
+const path_1 = __importDefault(require("path"));
+// Carga siempre el .env del backend, aunque Node se inicie desde otra carpeta.
+dotenv_1.default.config({ path: path_1.default.resolve(__dirname, "../.env") });
 const express_1 = __importDefault(require("express"));
 const http_1 = __importDefault(require("http"));
 const cors_1 = __importDefault(require("cors"));

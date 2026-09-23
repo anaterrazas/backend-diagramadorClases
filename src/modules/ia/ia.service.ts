@@ -26,7 +26,7 @@ export const IAService = {
       prompt,
       imagePath,
       mimeType,
-      model: 'gemini-2.5-flash'
+       model: 'gemini-2.5-flash'
     })
   },
 }

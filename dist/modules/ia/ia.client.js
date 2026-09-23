@@ -6,10 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateWithAI = generateWithAI;
 const fs_1 = __importDefault(require("fs"));
 const generative_ai_1 = require("@google/generative-ai");
-const genAI = new generative_ai_1.GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-console.log(process.env.GEMINI_API_KEY);
-console.log(process.env.GEMINI_API_KEY);
-console.log(process.env.GEMINI_API_KEY);
+const genAI = new generative_ai_1.GoogleGenerativeAI("AIzaSyAI_rridlJHmuPxb9-L6FidH38dqVXMX_A");
 function fileToBase64(filePath) {
     const image = fs_1.default.readFileSync(filePath);
     return image.toString("base64");

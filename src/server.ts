@@ -1,10 +1,10 @@
 import {} from "../types/express";
 import dotenv from "dotenv";
-dotenv.config();
+import path from "path";
 
-console.log("mi token");
-console.log(process.env.GEMINI_API_KEY!);
-console.log("mi token");
+// Carga siempre el .env del backend, aunque Node se inicie desde otra carpeta.
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
+
 import express from "express";
 import http from "http";
 import cors from "cors";
